@@ -1,0 +1,61 @@
+@media (max-width: 1000px){
+
+    header{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        border-bottom:1px solid #46166B ;
+
+    }
+
+}
+
+@media (max-width: 900px){
+    
+    header #header-links{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: 200px;
+        border-bottom:1px solid #46166B ;
+    }
+
+    nav #home{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    #home-conteudo{
+        text-align: center;
+    }
+
+    #home-foto{
+        width: fit-content;
+    }
+
+    #skills{
+        flex-direction: column;
+    }
+
+    #skills-linguagens ul{
+        border-right:none ;
+        border-bottom: #46166B 1px solid; 
+        padding-bottom:20px;
+        margin-bottom: 20px;
+        
+    }
+
+    #skills-linguagens li{
+        justify-content: center;
+    }
+
+
+}

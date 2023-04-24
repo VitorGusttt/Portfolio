@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: #f3f3f3;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+#header-nome h2{
+    font-size: 1.5em;
+    color: #000;
+    transition: ease-in-out 0.5s;
+
+}
+
+#header-nome h2:hover{
+    color: #9A31EB;
+    font-size: 1.6em;
+}
+
+
+a{
+    text-decoration: none;  
+    color: #000;
+}
+
+#header-links a{
+    padding: 0px 10px;
+    font-size: 1.2em;
+    transition: ease-in-out 0.3s;
+}
+
+#header-links a:hover{
+    color:#54376B;
+}
+
+
+
+nav #home{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    margin-bottom: 140px;
+    margin-bottom: 50px;
+}
+
+#home-conteudo{
+    padding: 20px;
+    width: 55%;
+}
+
+#home-conteudo h1{
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+#home-conteudo h1 span{
+    color: #46166B;
+}
+
+#home-conteudo h3{
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+#home-conteudo p{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+#home-conteudo a button{
+    width: 30%;
+    height: 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #54376B;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: #BB79EE 1px solid;
+    transition: 0.5s ease-in-out;
+}
+
+#home-conteudo a button:hover{
+    box-shadow: #BB79EE 2.85px 0.9px 3.95px;
+}
+
+
+#home-foto {
+  width: 50%;
+}
+
+#skills{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+#skills-linguagens{
+    width: 50%;
+}
+
+#skills-linguagens ul{
+    list-style: none;
+    border-right: 1px #46166B solid;
+}
+#skills-linguagens li{
+    align-items: center;
+    display: flex;
+}
+
+
+#skills-linguagens li h2{
+    font-size: 1.5em;
+    padding: 10px;
+    color:#54376B;
+}
+
+
+
+#skills-linguagens img{
+    width: 20%;
+    transition: ease-in-out 0.6s;
+}
+
+#skills-linguagens li img:hover{
+    width: 30%;
+}
+
+
+#skills-texto{
+    width: 50%;
+    height: 225px;
+}
+
+#skills-texto h1{
+    text-align: center;
+    margin: 1px;
+    font-size: 3em;
+    color: #46166B;   
+    transition: ease-in-out 0.5s;
+}
+
+#skills-texto h1:hover{
+    font-size: 3.3em;
+}
+
+
+#skills-texto p{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 15px;
+    width: 90%;
+}
+
+
+footer{
+    border-top:1px solid #46166B ;
+    width: 40%;
+    margin: 150px auto 10px auto;
+    text-align: center;
+}
+
+
+
