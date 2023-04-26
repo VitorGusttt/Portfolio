@@ -5,7 +5,7 @@
         margin-top: 20px;
         margin-bottom: 30px;
 
-        border-bottom:1px solid #46166B ;
+        border-bottom:1px solid var(--roxo) ;
 
     }
 
@@ -24,7 +24,7 @@
         margin-top: 20px;
         margin-bottom: 30px;
         height: 200px;
-        border-bottom:1px solid #46166B ;
+        border-bottom:1px solid var(--roxo) ;
     }
 
     nav #home{
@@ -35,6 +35,8 @@
     
     #home-conteudo{
         text-align: center;
+        width: 100%;
+
     }
 
     #home-foto{
@@ -47,7 +49,7 @@
 
     #skills-linguagens ul{
         border-right:none ;
-        border-bottom: #46166B 1px solid; 
+        border-bottom: var(--roxo) 1px solid; 
         padding-bottom:20px;
         margin-bottom: 20px;
         
@@ -55,6 +57,20 @@
 
     #skills-linguagens li{
         justify-content: center;
+    }
+
+    #skills-texto{
+        width: 100%;
+        border-bottom: var(--roxo) 1px solid;
+    }
+
+    #skills-linguagens img{
+        width: 50%;
+        transition: ease-in-out 0.6s;
+    }
+
+    #skills-linguagens li img:hover{
+        width: 60%;
     }
 
 

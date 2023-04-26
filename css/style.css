@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+
+html{
+    --roxo: #46166B;
+    --preto: #000;
+    --rosa: #9A31EB;
+    --bg: #f3f3f3;
+}
 *{
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
 body{
-    background: #f3f3f3;
+    background: var(--bg);
 }
 
 #container{
@@ -25,20 +32,20 @@ header{
 
 #header-nome h2{
     font-size: 1.5em;
-    color: #000;
+    color: var(--preto);
     transition: ease-in-out 0.5s;
 
 }
 
 #header-nome h2:hover{
-    color: #9A31EB;
+    color:  var(--rosa);
     font-size: 1.6em;
 }
 
 
 a{
     text-decoration: none;  
-    color: #000;
+    color: var(--preto);
 }
 
 #header-links a{
@@ -47,8 +54,13 @@ a{
     transition: ease-in-out 0.3s;
 }
 
+#header-links input[type=checkbox]{
+    width: 20;
+}
+
+
 #header-links a:hover{
-    color:#54376B;
+    color: var(--rosa);
 }
 
 
@@ -72,15 +84,18 @@ nav #home{
 #home-conteudo h1{
     font-size: 4em;
     margin-bottom: 5px;
+    color: var(--preto);
 }
 
 #home-conteudo h1 span{
-    color: #46166B;
+    color: var(--roxo);
 }
 
 #home-conteudo h3{
     font-size: 1em;
     margin-bottom: 15px;
+    color: var(--preto);
+
 }
 
 #home-conteudo p{
@@ -88,6 +103,8 @@ nav #home{
     font-weight: 500;
     margin-bottom: 15px;
     width: 90%;
+    color: var(--preto);
+
 }
 
 #home-conteudo a button{
@@ -95,15 +112,15 @@ nav #home{
     height: 30px;
     border-radius: 30px;
     color: #fff;
-    background-color: #54376B;
+    background-color: var(--roxo);
     font-size: 0.8em;
     font-weight: 500;
-    border: #BB79EE 1px solid;
+    border: var(--roxo) 1px solid;
     transition: 0.5s ease-in-out;
 }
 
 #home-conteudo a button:hover{
-    box-shadow: #BB79EE 2.85px 0.9px 3.95px;
+    box-shadow: var(--rosa) 2.85px 0.9px 3.95px;
 }
 
 
@@ -115,7 +132,7 @@ nav #home{
     display: flex;
     align-items: center;
     width: 80%;
-    height: 450px;
+    height: 100%;
     margin: 0 auto;
     padding: 15px;
 }
@@ -127,7 +144,7 @@ nav #home{
 
 #skills-linguagens ul{
     list-style: none;
-    border-right: 1px #46166B solid;
+    border-right: 1px var(--roxo) solid;
 }
 #skills-linguagens li{
     align-items: center;
@@ -138,7 +155,7 @@ nav #home{
 #skills-linguagens li h2{
     font-size: 1.5em;
     padding: 10px;
-    color:#54376B;
+    color:var(--roxo);
 }
 
 
@@ -162,12 +179,12 @@ nav #home{
     text-align: center;
     margin: 1px;
     font-size: 3em;
-    color: #46166B;   
-    transition: ease-in-out 0.5s;
+    color: var(--roxo);   
+    transition: ease-in-out 0.6s;
 }
 
 #skills-texto h1:hover{
-    font-size: 3.3em;
+    font-size: 3.8em;
 }
 
 
@@ -177,14 +194,18 @@ nav #home{
     font-weight: 500;
     margin: 15px;
     width: 90%;
+    color: var(--preto);
+
 }
 
 
 footer{
-    border-top:1px solid #46166B ;
-    width: 40%;
-    margin: 150px auto 10px auto;
+    border-top:1px solid var(--roxo) ;
+    width: 100%;
+    margin: 50px auto 10px auto;
     text-align: center;
+    color: var(--preto);
+
 }
 
 
