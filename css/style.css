@@ -47,15 +47,19 @@ a{
     text-decoration: none;  
     color: var(--preto);
 }
+#header-links {
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    
+    
+}
 
 #header-links a{
+
     padding: 0px 10px;
     font-size: 1.2em;
     transition: ease-in-out 0.3s;
-}
-
-#header-links input[type=checkbox]{
-    width: 20;
 }
 
 
@@ -63,7 +67,10 @@ a{
     color: var(--rosa);
 }
 
-
+#header-links i{
+    margin: auto;
+    color: var(--preto);
+}
 
 nav #home{
     display: flex;

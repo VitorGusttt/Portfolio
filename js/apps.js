@@ -1,21 +1,15 @@
-//get html/css
-const html = document.querySelector("html");
+//aqui eu pego meu icon que eh onde vai ser feito os ventos de click
+const html = document.querySelector("html")
+const btnTheme = document.querySelector("#theme")
 
-//get checkbox
-const checkbox = document.querySelector("input[name=theme");
-
-
-//pego as cores iniciais e as do black theme
-
-/*Basicamente aqui eu pego todo o estilo computado do html
-e depois eu seleciono o valor tal (--bg-color)*/
+//vou pegar o estilos do html
 const initialColors = {
-    bg: window.getComputedStyle(html).getPropertyValue('--bg-color'),
+    bg: window.getComputedStyle(html).getPropertyValue('--bg'),
     preto: window.getComputedStyle(html).getPropertyValue('--preto'),
     roxo: window.getComputedStyle(html).getPropertyValue('--roxo'),
     rosa: window.getComputedStyle(html).getPropertyValue('--rosa')
 } 
-
+//faco as cores dark
 const darkMode = {
     bg: "#333333",
     preto: "#fff",
@@ -23,11 +17,10 @@ const darkMode = {
     rosa: "#B34FFF"
 } 
 
-//aqui eu adc o '--' antes da key (bg, preto, roxo, rosa)
+//aqui eu trasformo de bg para --bg
 const transformKey = (key) => "--" + key
 
-
-//funcao para mudar de cores
+//aqui eu troco as cores
 const changeColors = (colors) => {
     //pega as keys do obj colors e mapeio ela no css, trocando as cores
     Object.keys(colors).map(key => 
@@ -35,8 +28,20 @@ const changeColors = (colors) => {
     )
 }
 
-//basicamente, sempre q ouver um evento no checkbox ele ira realizar essa funcao. ? = if ternario, taret = alvo
-checkbox.addEventListener("change", ({target}) => {
-    target.checked ? changeColors(darkMode) : changeColors(initialColors)
-})
+//pega o click
+btnTheme.addEventListener('click', () => {
+    //se tiver o simbolo da lua quer dizer q esta no tema light, entao eu troco as cores
+    if(btnTheme.classList.contains('fa-moon')){
+        btnTheme.classList.remove('fa-moon');
+        btnTheme.classList.add('fa-sun');
+        changeColors(darkMode)
+    }
+    //senao quer dizer q esta no tema dark, entao eu troco as cores
 
+    else{
+        btnTheme.classList.remove('fa-sun')
+        btnTheme.classList.add('fa-moon')
+        changeColors(initialColors)
+
+    };
+})
