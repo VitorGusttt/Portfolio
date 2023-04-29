@@ -73,5 +73,21 @@
         width: 60%;
     }
 
+    #projects #projects-box{
+        flex-direction: column;
+    }
+
+    #projects #projects-box .projects-img {
+        border-top: var(--roxo) 1px solid;
+        border-left: none;
+        width: 100%;
+    }
+
+    #projects #projects-box .projects-text{
+        width: 100%;
+    }
+    
+
+
 
 }
