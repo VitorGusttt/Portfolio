@@ -2,6 +2,8 @@
 const html = document.querySelector("html")
 const btnTheme = document.querySelector("#theme")
 
+
+
 //vou pegar o estilos do html
 const initialColors = {
     bg: window.getComputedStyle(html).getPropertyValue('--bg'),
@@ -45,3 +47,19 @@ btnTheme.addEventListener('click', () => {
 
     };
 })
+
+//aqui se inicia o efeito maquina de escrever
+function escreverEfeito(tagComTexto, tempoDesejado){
+    let tag = document.querySelector(tagComTexto);
+    let texto = `Hello, my name is Vitor Gustavo, I'm 17 years old, and I'm looking for opportunities to work as a full-stack developer.`;
+
+    const textoSplited = texto.split('')
+    
+    textoSplited.forEach((l, i) => {
+        setTimeout(()=>{
+            tag.innerHTML +=l
+        },tempoDesejado * i)
+    });
+    
+};
+escreverEfeito("#pApresentation",80)
