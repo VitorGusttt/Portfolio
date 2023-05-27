@@ -205,7 +205,7 @@ nav #home{
 
 }
 
-#projects{
+.projects{
     border-top: 1px var(--roxo) solid;
     display: flex;
     flex-direction: column;
@@ -216,12 +216,12 @@ nav #home{
     padding: 15px;
 }
 
-#projects #projects-header{
+.projects .projects-header{
     width: 100%;
     margin: 20px auto;
 }
 
-#projects #projects-header h1{
+.projects .projects-header h1{
     width: fit-content;
     margin: 0 auto;
     font-size: 3em;
@@ -230,53 +230,54 @@ nav #home{
     transition: ease-in-out 0.6s;
 }
 
-#projects #projects-header h1:hover{
+.projects .projects-header h1:hover{
     font-size: 3.8em;
 }
 
 
 
-#projects #projects-header p{
+.projects .projects-header p{
     color: var(--preto);
     text-align: center;
     font-size: 0.6em;
 }
 
-#projects #projects-box{
+.projects .projects-box{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    margin: 1em;
 }
 
-#projects #projects-box .projects-img {
+.projects .projects-box .projects-img {
     width: 50%;
     padding: 15px;
     border-left: var(--roxo) 1px solid;
 }
 
-#projects #projects-box .projects-img img {
+.projects .projects-box .projects-img img {
     width: 100%;
 }
 
-#projects #projects-box .projects-text{
+.projects .projects-box .projects-text{
     width: 50%;
 }
 
-#projects #projects-box .projects-text h3{
+.projects .projects-box .projects-text h3{
     color: var(--roxo);
     font-size: 2em;
     text-align: center;
     transition: ease-in-out 0.4s;
 }
 
-#projects #projects-box .projects-text h3:hover{
+.projects .projects-box .projects-text h3:hover{
     font-size: 2.5em;
 }
 
 
-#projects #projects-box .projects-text p{
+.projects .projects-box .projects-text p{
     text-align: center;
     font-size: 1em;
     font-weight: 500;
