@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+@font-face {
+    font-family: pixo-reto;
+    src: url(../fonts/pixo_reto/Pixo\ Reto.ttf);
+}
+
+@font-face {
+    font-family: street-soul;
+    src: url(../fonts/street_soul/street\ soul.ttf);
+}
+
+@font-face {
+    font-family: street-fire;
+    src: url(../fonts/streetfire/Streetfire.otf);
+}
+
+
 
 html{
     --roxo: #46166B;
@@ -56,7 +72,6 @@ a{
 }
 
 #header-links a{
-
     padding: 0px 10px;
     font-size: 1.2em;
     transition: ease-in-out 0.3s;
@@ -80,7 +95,6 @@ nav #home{
     align-items: center;
     height: 450px;
     margin-bottom: 140px;
-    margin-bottom: 50px;
 }
 
 #home-conteudo{
@@ -297,5 +311,22 @@ footer{
 
 }
 
+.pixo-reto {
+    font-family: pixo-reto;
+    font-size: 0.8em;
+
+}
+
+
+.street-soul {
+    font-size: 1em;
+    font-family: street-soul;
+}
+
+
+.street-fire {
+    font-size: 1em;
+    font-family: street-fire;
+}
 
 
